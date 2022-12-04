@@ -43,7 +43,7 @@ watch(
 
 // 定义 Directive Hooks
 const vFocus = {
-  mounted: (el): any => el.focus()
+  mounted: (el) => el.focus()
 }
 
 onMounted(() => {
