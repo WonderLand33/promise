@@ -7,8 +7,8 @@
     "withGlobalTauri": false
   },
   "package": {
-    "productName": "promise",
-    "version": "0.0.0"
+    "productName": "Promise",
+    "version": "0.1.0"
   },
   "tauri": {
     "allowlist": {
@@ -29,7 +29,7 @@
         "icons/icon.icns",
         "icons/icon.ico"
       ],
-      "identifier": "com.tauri.dev",
+      "identifier": "com.promise.todo",
       "longDescription": "",
       "macOS": {
         "entitlements": null,
@@ -56,11 +56,15 @@
     "windows": [
       {
         "fullscreen": false,
-        "height": 600,
+        "height": 800,
         "resizable": true,
-        "title": "promise",
-        "width": 800
+        "title": "📌",
+        "width": 400
       }
-    ]
+    ],
+    "systemTray": {
+      "iconPath": "icons/icon.png",
+      "iconAsTemplate": true
+    }
   }
 }
