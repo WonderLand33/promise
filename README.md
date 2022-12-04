@@ -19,7 +19,7 @@ A cross-platform To-Do list tool built with <a href="https://github.com/tauri-ap
 
 ## Screenshots
 
-![](screenshots/macos.png)
+![](screenshots/macos.jpg)
 
 ## Install
 
