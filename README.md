@@ -1,16 +1,47 @@
-# Tauri + Vue 3 + TypeScript
+<h1 align="center">
+  <img src="src-tauri/icons/128x128.png" width="128" />
+  <br>
+  Promise
+  <br>
+</h1>
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+<h3 align="center">
+A cross-platform To-Do list tool built with <a href="https://github.com/tauri-apps/tauri">tauri</a>.
+</h3>
 
-## Recommended IDE Setup
+<div align="center">
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) + [Tauri](https://marketplace.visualstudio.com/items?itemName=tauri-apps.tauri-vscode) + [rust-analyzer](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer)
+[![Windows Support](https://img.shields.io/badge/Windows-0078D6?style=flat&logo=windows&logoColor=white)](#)
+[![MacOS Support](https://img.shields.io/badge/MACOS-adb8c5?style=flat&logo=macos&logoColor=white)](#)
+[![Linux Support](https://img.shields.io/badge/linux-1793D1?style=flat&logo=linux&logoColor=white)](#)
 
-## Type Support For `.vue` Imports in TS
+</div>
 
-Since TypeScript cannot handle type information for `.vue` imports, they are shimmed to be a generic Vue component type by default. In most cases this is fine if you don't really care about component prop types outside of templates. However, if you wish to get actual prop types in `.vue` imports (for example to get props validation when using manual `h(...)` calls), you can enable Volar's Take Over mode by following these steps:
+## Screenshots
 
-1. Run `Extensions: Show Built-in Extensions` from VS Code's command palette, look for `TypeScript and JavaScript Language Features`, then right click and select `Disable (Workspace)`. By default, Take Over mode will enable itself if the default TypeScript extension is disabled.
-2. Reload the VS Code window by running `Developer: Reload Window` from the command palette.
+![](screenshots/macos.png)
 
-You can learn more about Take Over mode [here](https://github.com/johnsoncodehk/volar/discussions/471).
+## Install
+
+Download from [release](#). Supports Windows x64, Linux x86_64 and macOS 10.13+.
+
+Or you can build it yourself. Supports Windows, Linux and macOS 10.13+.
+
+Notes: If you could not start the app on Windows, please check that you have [Webview2](https://developer.microsoft.com/en-us/microsoft-edge/webview2/#download-section) installed.
+
+## Run Locally
+
+You'll need to setup Rust and Tauri CLI by following the [Getting Started guide here](https://tauri.app/v1/guides/getting-started/prerequisites).
+
+```bash
+$ git clone https://github.com/WonderLand33/promise.git
+$ cd promise
+$ pnpm install
+$ pnpm tauri build
+```
+
+## Build Target Binary
+
+```bash
+$ pnpm tauri build
+```
